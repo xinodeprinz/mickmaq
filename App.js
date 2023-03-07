@@ -1,9 +1,10 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Home from './pages/Home';
-import AssignmentOne from './pages/AssigmentOne';
-import AssignmentTwo from './pages/AssignmentTwo';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from './screens/HomeScreen';
+import ComponentScreen from './screens/ComponentScreen';
+import ListScreen from './screens/ListScreen';
+import ListScreenExercise from './screens/ListScreenExercise';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,12 +13,12 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Home"
-          component={Home}
-          options={{title: 'MickMaq Assignments'}}
+          name="HomeScreen"
+          component={HomeScreen}
         />
-        <Stack.Screen name="AssignmentOne" component={AssignmentOne} />
-        <Stack.Screen name="AssignmentTwo" component={AssignmentTwo} />
+        <Stack.Screen name="ComponentScreen" component={ComponentScreen} />
+        <Stack.Screen name="ListScreen" component={ListScreen} />
+        <Stack.Screen name="ListScreenExercise" component={ListScreenExercise} />
       </Stack.Navigator>
     </NavigationContainer>
   );

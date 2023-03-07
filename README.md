@@ -1,21 +1,31 @@
-# FLATLIST ASSIGNMENT
+## React Native Udemy Course
 
-### 1. Home Screen
+For now, I've completed up to `section 3` of the course. I've done the necessary exercises also. Below are the outputs of my various screens.
 
-The home screen contains the buttons (links) to the two exercises. This wasn't part of the assignment, but I just did it for easy access to each exercise when  running my app.
+#### 1. Home Screen
 
-[Click here to go to home screen file](./pages/Home.js)
+This screen is not found in the course, but is an additional screen added by me to easily have access to the various sections and exercises as I journey through the course. This screen takes into consideration `navigation` between the various screens.
+[Click here to go to home screen file](./screens/HomeScreen.js)
 
-![Home screen output](./assets/home-screen.jpg)
+![Home screen output](./assets/home.jpg)
 
-### 2. Assignment One
+#### 2. Component Screen
 
-[Click here to go to Assignment One file](./pages/AssigmentOne.js)
+This screen contains a simple functional react native component. Its aim was just to give us a clear understanding of how a functional component looks like.
+[Click here to go to Component file](./screens/ComponentScreen.js)
 
-![Assignment One output](./assets/exercise-1.jpg)
+![Component Screen output](./assets/component.jpg)
 
-### 3. Assignment Two
+#### 3. List Screen
 
-[Click here to go to Assignment Two file](./pages/AssignmentTwo.js)
+This screen talks about the use of `FlatList` in react native. How to pass an Array of data to a Flatlist and render it to the screen. It also takes into consideration vertical and horizontal scrolling. 
+[Click here to go to List Screen file](./screens/ListScreen.js)
 
-![Assignment Two output](./assets/exercise-2.jpg)
+![List Screen Output](./assets/list.jpg)
+
+#### 4. List Screen Exercise
+
+This was an exercise given at the end of `section 3` of the course. It needed us to create a vertical scrolling list of friends with their corresponding ages. 
+[Click here to go to List Screen Exercise](./screens/ListScreenExercise.js)
+
+![List Screen Exercise Output](./assets/list-exercise.jpg)
