@@ -8,19 +8,26 @@ import {
 } from 'react-native';
 
 const DATA = [
-  { id: 1, name: 'chinu', age: 50 },
-  { id: 2, name: 'tony', age: 20 },
-  { id: 3, name: 'harvard', age: 40 },
-  { id: 4, name: 'stark', age: 60 },
-  { id: 5, name: 'captian', age: 10 },
-  { id: 6, name: 'rogers', age: 90 },
-  { id: 7, name: 'winter', age: 70 },
-  { id: 8, name: 'payback', age: 100 },
+  { id: 1, name: 'Chinu', age: 50 },
+  { id: 2, name: 'Tony', age: 20 },
+  { id: 3, name: 'Harvard', age: 40 },
+  { id: 4, name: 'Stark', age: 60 },
+  { id: 5, name: 'Captian', age: 10 },
+  { id: 6, name: 'Rogers', age: 90 },
+  { id: 7, name: 'Winter', age: 70 },
+  { id: 8, name: 'Payback', age: 100 },
 ];
 
-const Item = ({text}) => (
+const Item = ({ text }) => (
   <View style={styles.item}>
     <Text style={styles.title}>{text}</Text>
+  </View>
+);
+
+const FirstItem = ({ name, age }) => (
+  <View style={styles.item}>
+    <Text style={styles.title}>Name is: {name}</Text>
+    <Text style={styles.title}>Age is: {age}</Text>
   </View>
 );
 
@@ -28,19 +35,14 @@ const AssignmentOne = () => {
   return (
     <ScrollView style={styles.container}>
       {/* <Text style={styles.heading}>assignment 1</Text> */}
-    <FlatList
+      <FlatList
         data={DATA}
-        renderItem={({item}) => <Item text={`name is: ${item.name}`} />}
+        renderItem={({ item }) => <FirstItem name={item.name} age={item.age} />}
         keyExtractor={item => item.id}
       />
-    <FlatList
+      <FlatList
         data={DATA}
-        renderItem={({item}) => <Item text={`id is: ${item.id}`} />}
-        keyExtractor={item => item.id}
-      />
-    <FlatList
-        data={DATA}
-        renderItem={({item}) => <Item text={`Age is: ${item.age}`} />}
+        renderItem={({ item }) => <Item text={`Id is: ${item.id}`} />}
         keyExtractor={item => item.id}
       />
     </ScrollView>
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
   title: {
-    textTransform: 'capitalize',
+    // textTransform: 'capitalize',
     fontSize: 18,
     color: 'blue',
   },
