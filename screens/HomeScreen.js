@@ -33,6 +33,12 @@ export default function HomeScreen({ navigation }) {
                 text="list screen exercise"
                 path="ListScreenExercise"
             />
+            <MyButton
+                backgroundColor="black"
+                color="white"
+                text="Section Five"
+                path="SectionFive"
+            />
         </SafeAreaView>
     )
 }
