@@ -39,6 +39,12 @@ export default function HomeScreen({ navigation }) {
                 text="Section Five"
                 path="SectionFive"
             />
+            <MyButton
+                backgroundColor="red"
+                color="white"
+                text="Counter App"
+                path="Counter"
+            />
         </SafeAreaView>
     )
 }

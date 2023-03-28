@@ -6,6 +6,7 @@ import ComponentScreen from './screens/ComponentScreen';
 import ListScreen from './screens/ListScreen';
 import ListScreenExercise from './screens/ListScreenExercise';
 import SectionFive from './screens/section-5/Main';
+import Counter from './screens/section-6/Counter';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +22,7 @@ const App = () => {
         <Stack.Screen name="ListScreen" component={ListScreen} />
         <Stack.Screen name="ListScreenExercise" component={ListScreenExercise} />
         <Stack.Screen name="SectionFive" component={SectionFive} />
+        <Stack.Screen name="Counter" component={Counter} />
       </Stack.Navigator>
     </NavigationContainer>
   );

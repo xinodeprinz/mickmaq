@@ -11,7 +11,7 @@ const Component = ({ title }) => {
             />
             <Text style={styles.title}>{title}</Text>
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
